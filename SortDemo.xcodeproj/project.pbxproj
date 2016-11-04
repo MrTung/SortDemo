@@ -15,6 +15,7 @@
 		01B8468B1DC8835900E5BBB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B846891DC8835900E5BBB4 /* LaunchScreen.storyboard */; };
 		01B846961DC8835900E5BBB4 /* SortDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B846951DC8835900E5BBB4 /* SortDemoTests.m */; };
 		01B846A11DC8835900E5BBB4 /* SortDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B846A01DC8835900E5BBB4 /* SortDemoUITests.m */; };
+		01B846B01DC8838400E5BBB4 /* Obj.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B846AF1DC8838400E5BBB4 /* Obj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		01B8469C1DC8835900E5BBB4 /* SortDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B846A01DC8835900E5BBB4 /* SortDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortDemoUITests.m; sourceTree = "<group>"; };
 		01B846A21DC8835900E5BBB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B846AE1DC8838400E5BBB4 /* Obj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj.h; sourceTree = "<group>"; };
+		01B846AF1DC8838400E5BBB4 /* Obj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				01B8467F1DC8835900E5BBB4 /* AppDelegate.m */,
 				01B846811DC8835900E5BBB4 /* ViewController.h */,
 				01B846821DC8835900E5BBB4 /* ViewController.m */,
+				01B846AE1DC8838400E5BBB4 /* Obj.h */,
+				01B846AF1DC8838400E5BBB4 /* Obj.m */,
 				01B846841DC8835900E5BBB4 /* Main.storyboard */,
 				01B846871DC8835900E5BBB4 /* Assets.xcassets */,
 				01B846891DC8835900E5BBB4 /* LaunchScreen.storyboard */,
@@ -276,6 +281,7 @@
 				01B846831DC8835900E5BBB4 /* ViewController.m in Sources */,
 				01B846801DC8835900E5BBB4 /* AppDelegate.m in Sources */,
 				01B8467D1DC8835900E5BBB4 /* main.m in Sources */,
+				01B846B01DC8838400E5BBB4 /* Obj.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +511,7 @@
 				01B846A71DC8835900E5BBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01B846A81DC8835900E5BBB4 /* Build configuration list for PBXNativeTarget "SortDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +520,7 @@
 				01B846AA1DC8835900E5BBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01B846AB1DC8835900E5BBB4 /* Build configuration list for PBXNativeTarget "SortDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +529,7 @@
 				01B846AD1DC8835900E5BBB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
