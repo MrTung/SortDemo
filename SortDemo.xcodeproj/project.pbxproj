@@ -117,7 +117,6 @@
 		01B8467A1DC8835900E5BBB4 /* SortDemo */ = {
 			isa = PBXGroup;
 			children = (
-				01482ADD1E0A09B700220618 /* Screenshots */,
 				01B8467E1DC8835900E5BBB4 /* AppDelegate.h */,
 				01B8467F1DC8835900E5BBB4 /* AppDelegate.m */,
 				01B846811DC8835900E5BBB4 /* ViewController.h */,
@@ -136,6 +135,7 @@
 		01B8467B1DC8835900E5BBB4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01482ADD1E0A09B700220618 /* Screenshots */,
 				01B8467C1DC8835900E5BBB4 /* main.m */,
 			);
 			name = "Supporting Files";
