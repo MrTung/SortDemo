@@ -18,8 +18,8 @@
 			1.      初始时。a[0]自成1个有序区，无序区为a[1..n-1]。令i=1
       
 			2.      将a[i]并入当前的有序区a[0…i-1]中形成a[0…i]的有序区间。
-      
-                        3.      i++并反复第二步直到i==n-1。
+			
+			3.      i++并反复第二步直到i==n-1。
       
 ￼![image](https://github.com/MrTung/SortDemo/blob/master/SortDemo/Screenshots/C8BC1433-B7B4-4440-900B-84AD4BE994C1.png?raw=true)
 
