@@ -47,7 +47,8 @@
     [self bubblesort:unSortedArray];
     [self selectorsort:unSortedArray];
     NSLog(@"快速排序开始");
-    [self quickSort:unSortedArray leftIndex:0 rightIndex:unSortedArray.count - 1];
+    int count = (int)unSortedArray.count - 1;
+    [self quickSort:unSortedArray leftIndex:0 rightIndex:count];
     NSLog(@"快速排序结束");
 }
 
@@ -56,7 +57,7 @@
 /**
  冒泡排序
  
- @param arr <#arr description#>
+ @param arr 待排序数组
  */
 - (void)bubblesort:(NSMutableArray *)arr
 {
@@ -79,7 +80,7 @@
 /**
  选择排序
  
- @param arr <#arr description#>
+ @param arr 待排序数组
  */
 - (void)selectorsort:(NSMutableArray *)arr
 {
@@ -102,10 +103,6 @@
 
 /**
  快速排序
- 
- @param arr   <#arr description#>
- @param left  <#left description#>
- @param right <#right description#>
  */
 - (void)quickSort:(NSMutableArray *)arr leftIndex:(int)left rightIndex:(int)right
 {
@@ -117,13 +114,6 @@
     }
 }
 
-
-/**
- @param arr <#arr description#>
- @param left <#left description#>
- @param right <#right description#>
- @return <#return value description#>
- */
 - (int)getMiddleIndex:(NSMutableArray *)arr leftIndex:(int)left rightIndex:(int)right
 {
     int tempValue = [arr[left] intValue];
@@ -149,7 +139,7 @@
 /**
  插入排序
  
- @param arr <#arr description#>
+ @param arr 待排序数组
  */
 - (void)insertsort:(NSMutableArray *)arr
 {
