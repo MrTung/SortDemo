@@ -46,7 +46,9 @@
     [self insertsort:unSortedArray];
     [self bubblesort:unSortedArray];
     [self selectorsort:unSortedArray];
-    [self quickSort:unSortedArray leftIndex:1 rightIndex:5];
+    NSLog(@"快速排序开始");
+    [self quickSort:unSortedArray leftIndex:0 rightIndex:unSortedArray.count - 1];
+    NSLog(@"快速排序结束");
 }
 
 #pragma mark 四大排序方式
@@ -107,17 +109,21 @@
  */
 - (void)quickSort:(NSMutableArray *)arr leftIndex:(int)left rightIndex:(int)right
 {
-    CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
-    
-    if (left < right) {
+    if (left < right)
+    {
         int temp = [self getMiddleIndex:arr leftIndex:left rightIndex:right];
         [self quickSort:arr leftIndex:left rightIndex:temp - 1];
         [self quickSort:arr leftIndex:temp + 1 rightIndex:right];
     }
-    CFAbsoluteTime end  = CFAbsoluteTimeGetCurrent();
-    NSLog(@"快速排序: %0.3f ms", (end - start)*1000);
 }
 
+
+/**
+ @param arr <#arr description#>
+ @param left <#left description#>
+ @param right <#right description#>
+ @return <#return value description#>
+ */
 - (int)getMiddleIndex:(NSMutableArray *)arr leftIndex:(int)left rightIndex:(int)right
 {
     int tempValue = [arr[left] intValue];
